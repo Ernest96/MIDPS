@@ -1,9 +1,22 @@
 \documentclass[12pt]{article}
 \usepackage{pdfpages}
 \usepackage{eso-pic}
+\usepackage{hyperref,url}
 
 \begin{document}
 \input{Titlu.tex}
+\cleardoublepage
+
+\newpage
+
+\pagenumbering{arabic}
+\setcounter{page}{1}
+\setcounter{secnumdepth}{4}
+
+\addtocontents{toc}{\protect\thispagestyle{empty}} % no page number on the table of contents page
+\cleardoublepage
+
+\input{Introducere.tex}
 \cleardoublepage
 
 \end{document}
