@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=latex 2017.2.6)  8 FEB 2017 12:44
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=latex 2017.2.6)  9 FEB 2017 19:48
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -331,24 +331,24 @@ File: images/3.eps Graphic file (type eps)
  <images/3.eps>
 File: images/4.eps Graphic file (type eps)
  <images/4.eps>
-Underfull \hbox (badness 10000) in paragraph at lines 27--47
+Underfull \hbox (badness 10000) in paragraph at lines 27--45
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 27--47
+Underfull \hbox (badness 10000) in paragraph at lines 27--45
 
  []
 
 
-Overfull \hbox (12.67061pt too wide) in paragraph at lines 27--47
+Underfull \hbox (badness 10000) in paragraph at lines 27--45
+
+ []
+
+
+Overfull \hbox (12.67061pt too wide) in paragraph at lines 27--45
 | \OT1/cmr/m/n/12 Este de dorit sa ini-tial-izam re-poz-i-to-riul nos-tru cu un
  fisier \OT1/cmr/bx/n/12 README.md
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 27--47
-
  []
 
 [3
@@ -424,23 +424,67 @@ Underfull \hbox (badness 10000) in paragraph at lines 13--30
 
 [6
 
+] (./branch.tex
+File: images/10.eps Graphic file (type eps)
+ <images/10.eps>
+Underfull \hbox (badness 10000) in paragraph at lines 1--12
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1--12
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1--12
+
+ []
+
+[7
+
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 32.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 32.
+File: images/12.eps Graphic file (type eps)
+ <images/12.eps>)
+Overfull \hbox (0.54495pt too wide) in paragraph at lines 13--33
+\OT1/cmr/bx/n/12 git branch -u up-stream/name \OT1/cmr/m/n/12 - face track la b
+ranchul in-di-cat din branchul
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 13--33
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 13--33
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 13--33
+
+ []
+
+[8
+
+]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 35.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 35.
  (./base.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 32.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 32.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 35.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 35.
 Package rerunfilecheck Info: File `base.out' has not changed.
 (rerunfilecheck)             Checksum: ADE1CB19122186E1F7839B07EDCDFBC9;306.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 32.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 35.
  ) 
 Here is how much of TeX's memory you used:
- 5801 strings out of 493030
- 85531 string characters out of 6136261
+ 5808 strings out of 493030
+ 85597 string characters out of 6136261
  175008 words of memory out of 5000000
- 9266 multiletter control sequences out of 15000+600000
+ 9268 multiletter control sequences out of 15000+600000
  10005 words of font info for 35 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  37i,6n,39p,255b,400s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on base.dvi (7 pages, 13228 bytes).
+Output written on base.dvi (9 pages, 16140 bytes).
