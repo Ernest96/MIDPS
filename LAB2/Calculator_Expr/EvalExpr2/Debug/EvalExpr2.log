@@ -1,0 +1,5 @@
+﻿  MyForm.cpp
+c:\c\midps\evalexpr2\evalexpr2\eval_expr.c(61): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+c:\c\midps\evalexpr2\evalexpr2\eval_expr.c(68): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+  EvalExpr2.vcxproj -> C:\c\midps\EvalExpr2\Debug\EvalExpr2.exe
+  EvalExpr2.vcxproj -> C:\c\midps\EvalExpr2\Debug\EvalExpr2.pdb (Full PDB)
