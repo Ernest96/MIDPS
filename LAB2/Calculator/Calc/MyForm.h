@@ -1,5 +1,7 @@
 ﻿#pragma once
 #include <cmath>
+#include <ctype.h>
+using namespace System::Runtime::InteropServices;
 namespace Calc {
 
 	using namespace System;
@@ -477,6 +479,28 @@ private: System::Void button_Click(System::Object^  sender, System::EventArgs^  
 	}
 }
 
+private: System::Boolean is_ok(Void)
+{
+	char* str = (char*)(void*)Marshal::StringToHGlobalAnsi(txtDisplay->Text);
+	
+	if (*str == '-' && *(str + 1) == 0)
+		return (0);
+
+	while (*str)
+	{
+		if (!isdigit(*str) && *str != ',' && *str != '-')
+		{
+			lastop = 0;
+			result = 0;
+			txtDisplay->Text = "ERROR";
+			lbl->Text = "";
+			return (0);
+		}
+		++str;
+	}
+	return (1);
+}
+
 private: System::Void do_lastop()
 {
 	if (lastop == '+')
@@ -492,66 +516,80 @@ private: System::Void do_lastop()
 }
 
 private: System::Void bplus_Click(System::Object^  sender, System::EventArgs^  e) {
-	num = (double)Double::Parse(txtDisplay->Text);
-	if (lastop)
+	if (is_ok())
 	{
-		do_lastop();
+		num = (double)Double::Parse(txtDisplay->Text);
+		if (lastop)
+			do_lastop();
+		else
+			result += num;
+	
+			lastop = '+';
+			txtDisplay->Text = System::Convert::ToString(result);
+			lbl->Text = System::Convert::ToString(result) + "+";
+			txtDisplay->Text = "0";	
 	}
-	else
-		result += num;
-	lastop = '+';
-	txtDisplay->Text = System::Convert::ToString(result);
-	lbl->Text = System::Convert::ToString(result) + "+";
-	txtDisplay->Text = "0";
 }
 private: System::Void beq_Click(System::Object^  sender, System::EventArgs^  e) {
-	if (lastop == '+')
-		txtDisplay->Text = System::Convert::ToString(result + (double)Double::Parse(txtDisplay->Text));
-	else if (lastop == '-')
-		txtDisplay->Text = System::Convert::ToString(result - (double)Double::Parse(txtDisplay->Text));
-	else if (lastop == '*')
-		txtDisplay->Text = System::Convert::ToString(result * (double)Double::Parse(txtDisplay->Text));
-	else if (lastop == '/')
-		txtDisplay->Text = System::Convert::ToString(result / (double)Double::Parse(txtDisplay->Text));
-	else if (lastop == 'p')
-		txtDisplay->Text = System::Convert::ToString(pow(result, (double)Double::Parse(txtDisplay->Text)));
-	else txtDisplay->Text = lbl->Text;
-	lbl->Text = "";
-	lastop = 0;
-	result = 0;
+	if (is_ok())
+	{
+		if (lastop == '+')
+			txtDisplay->Text = System::Convert::ToString(result + (double)Double::Parse(txtDisplay->Text));
+		else if (lastop == '-')
+			txtDisplay->Text = System::Convert::ToString(result - (double)Double::Parse(txtDisplay->Text));
+		else if (lastop == '*')
+			txtDisplay->Text = System::Convert::ToString(result * (double)Double::Parse(txtDisplay->Text));
+		else if (lastop == '/')
+			txtDisplay->Text = System::Convert::ToString(result / (double)Double::Parse(txtDisplay->Text));
+		else if (lastop == 'p')
+			txtDisplay->Text = System::Convert::ToString(pow(result, (double)Double::Parse(txtDisplay->Text)));
+		else txtDisplay->Text = lbl->Text;
+		lbl->Text = "";
+		lastop = 0;
+		result = 0;
+	}
 }
 private: System::Void bminus_Click(System::Object^  sender, System::EventArgs^  e) {
-	num = (double)Double::Parse(txtDisplay->Text);
-	if (lastop)
-		do_lastop();
-	else if (!lastop)
-		result += num;
-	txtDisplay->Text = System::Convert::ToString(result);
-	lbl->Text = System::Convert::ToString(result) + "-";
-	txtDisplay->Text = "0";
-	lastop = '-';
+	if (is_ok())
+	{
+		num = (double)Double::Parse(txtDisplay->Text);
+		if (lastop)
+			do_lastop();
+		else if (!lastop)
+			result += num;
+		txtDisplay->Text = System::Convert::ToString(result);
+		lbl->Text = System::Convert::ToString(result) + "-";
+		txtDisplay->Text = "0";
+		lastop = '-';
+	}
 }
 private: System::Void bmult_Click(System::Object^  sender, System::EventArgs^  e) {
-	num = (double)Double::Parse(txtDisplay->Text);
-	if (lastop)
-		do_lastop();
-	else
-		result = num;
-	txtDisplay->Text = System::Convert::ToString(result);
-	lbl->Text = System::Convert::ToString(result) + "*";
-	txtDisplay->Text = "0";
-	lastop = '*';
+	if (is_ok())
+	{
+			num = (double)Double::Parse(txtDisplay->Text);
+		if (lastop)
+			do_lastop();
+		else
+			result = num;
+		txtDisplay->Text = System::Convert::ToString(result);
+		lbl->Text = System::Convert::ToString(result) + "*";
+		txtDisplay->Text = "0";
+		lastop = '*';
+	}
 }
 private: System::Void bdiv_Click(System::Object^  sender, System::EventArgs^  e) {
-	num = (double)Double::Parse(txtDisplay->Text);
-	if (lastop)
-		do_lastop();
-	else
-		result = num;
-	txtDisplay->Text = System::Convert::ToString(result);
-	lbl->Text = System::Convert::ToString(result) + "/";
-	txtDisplay->Text = "0";
-	lastop = '/';
+	if (is_ok())
+	{
+		num = (double)Double::Parse(txtDisplay->Text);
+		if (lastop)
+			do_lastop();
+		else
+			result = num;
+		txtDisplay->Text = System::Convert::ToString(result);
+		lbl->Text = System::Convert::ToString(result) + "/";
+		txtDisplay->Text = "0";
+		lastop = '/';
+	}
 }
 private: System::Void bdot_Click(System::Object^  sender, System::EventArgs^  e) {
 	if (!txtDisplay->Text->Contains(","))
@@ -560,25 +598,32 @@ private: System::Void bdot_Click(System::Object^  sender, System::EventArgs^  e)
 	}
 }
 private: System::Void bsqrt_Click(System::Object^  sender, System::EventArgs^  e) {
-	num = (double)Double::Parse(txtDisplay->Text);
-	if (lastop)
-		do_lastop();
-	result = (double)sqrt(num);
-	txtDisplay->Text = System::Convert::ToString(result);
-	lbl->Text = System::Convert::ToString(result);
-	txtDisplay->Text = "0";
-	lastop = 's';
+	if (is_ok())
+	{
+		num = (double)Double::Parse(txtDisplay->Text);
+		if (lastop)
+			do_lastop();
+		result = (double)sqrt(num);
+		txtDisplay->Text = System::Convert::ToString(result);
+		lbl->Text = System::Convert::ToString(result);
+		txtDisplay->Text = "0";
+		lastop = 's';
+	}
 }
 private: System::Void button5_Click(System::Object^  sender, System::EventArgs^  e) {
-	num = (double)Double::Parse(txtDisplay->Text);
-	if (lastop)
-		do_lastop();
-	else
-		result = num;
-	txtDisplay->Text = System::Convert::ToString(result);
-	lbl->Text = System::Convert::ToString(result) + "^";
-	txtDisplay->Text = "0";
-	lastop = 'p';
+	
+	if (is_ok())
+	{
+		num = (double)Double::Parse(txtDisplay->Text);
+		if (lastop)
+			do_lastop();
+		else
+			result = num;
+		txtDisplay->Text = System::Convert::ToString(result);
+		lbl->Text = System::Convert::ToString(result) + "^";
+		txtDisplay->Text = "0";
+		lastop = 'p';
+	}
 }
 private: System::Void bkspace_Click(System::Object^  sender, System::EventArgs^  e) {
 	if (txtDisplay->Text->Length > 0)
@@ -587,7 +632,9 @@ private: System::Void bkspace_Click(System::Object^  sender, System::EventArgs^ 
 	}
 }
 private: System::Void semn_Click(System::Object^  sender, System::EventArgs^  e) {
-	if (txtDisplay->Text->Contains("-"))
+	if (txtDisplay->Text[0] == '0')
+		txtDisplay->Text = "-";
+	else if (txtDisplay->Text->Contains("-"))
 	{
 		txtDisplay->Text = txtDisplay->Text->Remove(0, 1);
 	}

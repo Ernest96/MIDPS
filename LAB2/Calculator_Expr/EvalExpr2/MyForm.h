@@ -1,6 +1,8 @@
 ﻿#pragma once
 
 #include <stdlib.h>
+#include <ctype.h>
+#include <string.h>
 #include "check.c"
 #include "f_package.c"
 #include "get.c"
@@ -423,7 +425,26 @@ namespace EvalExpr2 {
 
 		}
 #pragma endregion
+
 	float result;
+
+private: System::Boolean is_ok(Void)
+{
+	char	*str = (char*)(void*)Marshal::StringToHGlobalAnsi(txtDisplay->Text);
+	const char *simb = "+-*/().";
+
+	while (*str)
+	{
+		if (!isdigit(*str) && !strchr(simb, *str))
+		{
+			result = 0;
+			txtDisplay->Text = "ERROR";
+			return (0);
+		}
+		++str;
+	}
+	return (1);
+}
 
 private: System::Void btn_click(System::Object^  sender, System::EventArgs^  e) {
 	Button^ Numbers = safe_cast<Button^>(sender);
@@ -463,9 +484,12 @@ private: System::Void bdot_Click(System::Object^  sender, System::EventArgs^  e)
 		txtDisplay->Text = txtDisplay->Text + ".";
 }
 private: System::Void beq_Click(System::Object^  sender, System::EventArgs^  e) {
-	char* str2 = (char*)(void*)Marshal::StringToHGlobalAnsi(txtDisplay->Text);
-	result = eval_expr(str2);
-	txtDisplay->Text = System::Convert::ToString(result);
+	if (is_ok())
+	{
+		char* str2 = (char*)(void*)Marshal::StringToHGlobalAnsi(txtDisplay->Text);
+		result = eval_expr(str2);
+		txtDisplay->Text = System::Convert::ToString(result);
+	}
 }
 private: System::Void b0_Click(System::Object^  sender, System::EventArgs^  e) {
 	txtDisplay->Text = txtDisplay->Text + "0";
