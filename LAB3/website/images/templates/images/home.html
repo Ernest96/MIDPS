@@ -21,14 +21,65 @@ a.two {
     font-size: 17px;
     font-family:"Lato Heavy";
     color: white;
+    display: inline;
     text-align: right;
     text-shadow: 2px 1px black;
     text-decoration:none;
 }
+    .Row
+{
+    display: table;
+    width: 100%; /*Optional*/
+    table-layout: fixed; /*Optional*/
+    border-spacing: 10px; /*Optional*/
+}
+.Column1
+{
+    display: table-cell;
+    background:rgba(255,255,255,0.5);
+}
+.Column2
+{
+    display: table-cell;
+    background:rgba(255,255,255,0.0);
+}
+    p.font2 {
+     font-size: 18px;
+    text-shadow: 2px 1px black;
+    font-family:"Lato Heavy";
+    color: white;
+}
+     p.font1 {
+     font-size: 15px;
+    font-family:"Lato Heavy";
+    color: black;
+}
 </style>
 
-<div style="text-align:right">
+<div style="text-align:right" >
     <p><b><a class="two" href="about/" target="_blank">About</a></b></p>
+</div>
 <div style="text-align:center">
 <p><b><a class="one" href="images/" target="_blank">>-Wallpapers App-<</a></b></p>
+</div>
+<div class="Row">
+    <div class="Column2" style="text-align:center"><p class="font2">Wallpapers app</p></div>
+    <div class="Column2" style="text-align:center"><p class="font2">Music app</p></div>
+    <div class="Column2" style="text-align:center"><p class="font2">Video app</p></div>
+</div>
+<div class="Row">
+    <div class="Column1"><p class="font1">This application allows
+you to view our Wallpapers. Actually there are 4 categories. More-coming soon !.
+        If you think that you have nice wallpaperes,
+        you can send them to our administrator.</p></div>
+    <div class="Column1"><p class="font1">Music App is in construction at the moment.
+        This app will allow you to download your favorite songs from our website. Also you will be able to add your
+    own songs and share them with your friends.</p></div>
+    <div class="Column1"><p class="font1">Video App is an app which contain a collection of video tutorials.
+        In this way you can enhance your skills very easy.
+        There will be categories like cooking, programming and sport.
+    </p></div>
+</div>
+<div style="text-align:left; position: fixed; bottom: 0; left: 0;">
+    <p class="font2">ernest.bitca@gmail.com</p>
 </div>
