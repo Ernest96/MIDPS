@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=latex 2017.2.6)  29 APR 2017 12:43
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=latex 2017.2.6)  30 APR 2017 11:46
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -326,19 +326,15 @@ Overfull \hbox (8.33774pt too wide) in paragraph at lines 84--85
 
 [4
 
-] [5])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 20.
- [6
-
-
-]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 20.
+]) [5]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 18.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 18.
  (./base.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 20.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 20.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 18.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 18.
 Package rerunfilecheck Info: File `base.out' has not changed.
 (rerunfilecheck)             Checksum: 15084572AB54F035F24D8B8DEAC1D078;280.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 20.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 18.
  ) 
 Here is how much of TeX's memory you used:
  5766 strings out of 493030
@@ -349,4 +345,4 @@ Here is how much of TeX's memory you used:
  1141 hyphenation exceptions out of 8191
  37i,6n,39p,602b,400s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on base.dvi (7 pages, 12156 bytes).
+Output written on base.dvi (6 pages, 12724 bytes).
