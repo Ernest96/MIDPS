@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="q" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/q" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/q" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-fexceptions" />
+		</Compiler>
+		<Unit filename="../../vcrivenc/Parsing_Ernest/acb_work.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../vcrivenc/Parsing_Ernest/check.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../vcrivenc/Parsing_Ernest/check_type.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../vcrivenc/Parsing_Ernest/core_checks.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../vcrivenc/Parsing_Ernest/file_read.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../vcrivenc/Parsing_Ernest/functions.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../vcrivenc/Parsing_Ernest/get_next_line.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../vcrivenc/Parsing_Ernest/inits.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../vcrivenc/Parsing_Ernest/messages.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../vcrivenc/Parsing_Ernest/name_comment.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../vcrivenc/Parsing_Ernest/parse.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../vcrivenc/Parsing_Ernest/set.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../vcrivenc/Parsing_Ernest/str_checks.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../vcrivenc/Parsing_Ernest/transform.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../vcrivenc/corewar.h" />
+		<Unit filename="../../vcrivenc/ft_itoa_base.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../vcrivenc/libft/ft_atoi.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../vcrivenc/libft/ft_bzero.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../vcrivenc/libft/ft_isalnum.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../vcrivenc/libft/ft_isalpha.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../vcrivenc/libft/ft_isascii.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../vcrivenc/libft/ft_isdigit.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../vcrivenc/libft/ft_isprint.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../vcrivenc/libft/ft_itoa.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../vcrivenc/libft/ft_lstadd.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../vcrivenc/libft/ft_lstdel.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../vcrivenc/libft/ft_lstdelone.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../vcrivenc/libft/ft_lstiter.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../vcrivenc/libft/ft_lstmap.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../vcrivenc/libft/ft_lstnew.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../vcrivenc/libft/ft_memalloc.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../vcrivenc/libft/ft_memccpy.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../vcrivenc/libft/ft_memchr.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../vcrivenc/libft/ft_memcmp.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../vcrivenc/libft/ft_memcpy.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../vcrivenc/libft/ft_memdel.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../vcrivenc/libft/ft_memset.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../vcrivenc/libft/ft_putchar.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../vcrivenc/libft/ft_putchar_fd.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../vcrivenc/libft/ft_putendl.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../vcrivenc/libft/ft_putendl_fd.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../vcrivenc/libft/ft_putnbr.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../vcrivenc/libft/ft_putnbr_fd.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../vcrivenc/libft/ft_putstr.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../vcrivenc/libft/ft_putstr_fd.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../vcrivenc/libft/ft_split_whitespaces.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../vcrivenc/libft/ft_strcat.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../vcrivenc/libft/ft_strchr.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../vcrivenc/libft/ft_strclr.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../vcrivenc/libft/ft_strcmp.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../vcrivenc/libft/ft_strcpy.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../vcrivenc/libft/ft_strdel.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../vcrivenc/libft/ft_strdup.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../vcrivenc/libft/ft_strequ.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../vcrivenc/libft/ft_striter.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../vcrivenc/libft/ft_striteri.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../vcrivenc/libft/ft_strjoin.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../vcrivenc/libft/ft_strlcat.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../vcrivenc/libft/ft_strlen.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../vcrivenc/libft/ft_strmap.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../vcrivenc/libft/ft_strmapi.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../vcrivenc/libft/ft_strncat.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../vcrivenc/libft/ft_strncmp.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../vcrivenc/libft/ft_strncpy.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../vcrivenc/libft/ft_strnequ.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../vcrivenc/libft/ft_strnew.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../vcrivenc/libft/ft_strnstr.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../vcrivenc/libft/ft_strrchr.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../vcrivenc/libft/ft_strsplit.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../vcrivenc/libft/ft_strstr.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../vcrivenc/libft/ft_strsub.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../vcrivenc/libft/ft_strtrim.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../vcrivenc/libft/ft_tolower.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../vcrivenc/libft/ft_toupper.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

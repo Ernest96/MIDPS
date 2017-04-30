@@ -1,0 +1,96 @@
+\section*{Lucrarea de laborator \#5}
+\phantomsection
+
+\section{Obiectivele lucrarii}
+
+Crearea unei aplicatii complexe in echipa.
+~\\
+Divizarea sarcinilor pe membrii echipei.
+
+\section{Scopul lucrarii de laborator}
+
+Lucrul in echipa.
+~\\
+Aplicarea tehnicilor, limbajelor de programare si 
+IDE-uri studiate in laboratoarele precedente.
+
+\section{Mersul lucrarii de laborator}
+
+\tab In lucrarea de laborator s-a creat jocul \textbf{"Corewar"}.
+Insusi jocul consta in crearea unor \textbf{jucatori} care reprezinta niste \textbf{procese} (programe).
+Procesele date sunt incarcate pe un sector de memorie (arena unde vor lupta jucatorii.)
+Scopul principal a jucatorilor este se lupte intre ei si sa ramina in viata.
+Fiecare jucator este scris intr-un \textbf{pseudo limbaj de programare}, prin urmare ei necesita sa fie compilati
+(setul de instructiuni este prezent in fisierul extern).
+~\\
+\tab Pentru a compila jucatorii s-a creat un \textbf{"compilator"} care va transla instructiunele (Fig 1) intr-un cod care va fi
+ perceput de \textbf{"masina virtuala"} (Fig 2).
+
+\begin{center}
+\includegraphics[width=6cm, height=4.8cm]{1.eps}
+~\\
+Fig 1.
+\end{center}
+\clearpage
+
+\begin{center}
+\includegraphics[width=9cm, height=4.2cm]{10.eps}
+~\\
+Fig 2.
+\end{center}
+
+\tab Pentru a compila jucatorul trebuie sa avem un fisier cu extensia \textbf{.s}. In caz contrar vom primi
+eroare la compilare. Totodata la compilare se indica rindul in care este prezenta eroarea. Fisierul compilat
+se pastreaza sub format \textbf{.cor} (Fig3).
+
+
+\begin{center}
+\includegraphics[width=5.9cm, height=4.5cm]{3.eps}
+~\\
+Fig 3.
+\end{center}
+
+Fiecare jucator are numele sau si totodata un comentariu care este indicat la inceputul programului.
+Exemplu de pornire a compilatorului (Fig 4).
+
+\begin{center}
+\includegraphics[width=9.5cm, height=3.5cm]{2.eps}
+~\\
+Fig 4.
+\end{center}
+\clearpage
+
+
+\textbf{Secvente de cod}(Fig 5).
+
+\begin{center}
+~\\
+\includegraphics[width=7.3cm, height=8.5cm]{5.eps}
+~\\
+Fig 5
+\end{center}
+
+\section{Regulile jocului}
+Fiecare jucator este scris in limbajul asm modificat(RedCode) care prin Compilator se transforma in bytecode.
+Codul la fiecare jucator este incarcat in memoria masinei virtuale,care este apoi executat consecutiv.Scopul jocului este de a ramine in viata, pentru asta fiecare jucator trebuie sa execute instructiunea live cu nr lui.Pe linga aceasta instructiune sunt prezente si multe altele: operatiile aritmetice, de incarcare datelor in registri, de accesare si modificare a memoriei ,de creare a proceselor noi.Datorita faptului ca memoria este partajata de toti jucatori, ele pot influenta portiunea de cod a altor jucatori si astfel sa le dauneze, sau chiar sa le "omoare".
+
+\clearpage
+\section{Screenshoturi}
+\begin{center}
+\includegraphics[width=14cm, height=8.5cm]{7.eps}
+\end{center}
+
+\begin{center}
+\includegraphics[width=14cm, height=7.5cm]{4.eps}
+\end{center}
+
+\begin{center} 
+\end{center}
+
+\begin{center} 
+\end{center}
+
+\begin{center} 
+\end{center}
+\clearpage
+

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_layout_file>
+	<ActiveTarget name="Debug" />
+	<File name="..\..\vcrivenc\ft_itoa_base.c" open="1" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1649" topLine="65" />
+		</Cursor>
+	</File>
+	<File name="..\..\vcrivenc\libft\ft_bzero.c" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="991" topLine="4" />
+		</Cursor>
+	</File>
+	<File name="..\..\vcrivenc\libft\ft_split_whitespaces.c" open="1" top="0" tabpos="8" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1720" topLine="13" />
+		</Cursor>
+	</File>
+	<File name="..\..\vcrivenc\Parsing_Ernest\check.c" open="1" top="1" tabpos="12" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1523" topLine="34" />
+		</Cursor>
+	</File>
+	<File name="..\..\vcrivenc\Parsing_Ernest\acb_work.c" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1210" topLine="22" />
+		</Cursor>
+	</File>
+	<File name="..\..\vcrivenc\libft\ft_strdup.c" open="1" top="0" tabpos="7" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="996" topLine="17" />
+		</Cursor>
+	</File>
+	<File name="..\..\vcrivenc\Parsing_Ernest\file_read.c" open="1" top="0" tabpos="9" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="968" topLine="24" />
+		</Cursor>
+	</File>
+	<File name="..\..\vcrivenc\Parsing_Ernest\get_next_line.c" open="1" top="0" tabpos="10" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="997" topLine="11" />
+		</Cursor>
+	</File>
+	<File name="..\..\vcrivenc\Parsing_Ernest\inits.c" open="1" top="0" tabpos="6" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="987" topLine="16" />
+		</Cursor>
+	</File>
+	<File name="..\..\vcrivenc\Parsing_Ernest\messages.c" open="1" top="0" tabpos="11" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1059" topLine="25" />
+		</Cursor>
+	</File>
+	<File name="..\..\vcrivenc\Parsing_Ernest\name_comment.c" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1005" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="..\..\vcrivenc\libft\ft_putchar.c" open="1" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="0" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="..\..\vcrivenc\Parsing_Ernest\parse.c" open="1" top="0" tabpos="5" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1481" topLine="26" />
+		</Cursor>
+		<Folding>
+			<Collapse line="15" />
+			<Collapse line="22" />
+		</Folding>
+	</File>
+	<File name="..\..\vcrivenc\libft\ft_putendl.c" open="1" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="0" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="..\..\vcrivenc\Parsing_Ernest\transform.c" open="1" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="966" topLine="15" />
+		</Cursor>
+	</File>
+	<File name="..\..\vcrivenc\libft\ft_putnbr.c" open="1" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="0" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="..\..\vcrivenc\corewar.h" open="1" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="0" topLine="0" />
+		</Cursor>
+	</File>
+</CodeBlocks_layout_file>

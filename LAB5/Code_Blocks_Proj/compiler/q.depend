@@ -1,0 +1,242 @@
+# depslib dependency file v1.0
+1385320478 source:c:\6\q\main.cpp
+	<iostream>
+
+1491842260 source:c:\vcrivenc\parsing_ernest\acb_work.c
+	"../corewar.h"
+
+1492725402 c:\vcrivenc\corewar.h
+	<stdio.h>
+	<stdint.h>
+	<stdlib.h>
+	"libft/libft.h"
+	"get_next_line.h"
+
+1492723053 c:\vcrivenc\libft\libft.h
+	<sys/types.h>
+	<wchar.h>
+	<inttypes.h>
+	<stdlib.h>
+	<io.h>
+
+1491842260 c:\vcrivenc\get_next_line.h
+	<stdlib.h>
+	<unistd.h>
+	<fcntl.h>
+
+1491842260 source:c:\vcrivenc\parsing_ernest\check.c
+	"../corewar.h"
+
+1491842260 source:c:\vcrivenc\parsing_ernest\check_type.c
+	"../corewar.h"
+
+1491842260 source:c:\vcrivenc\parsing_ernest\core_checks.c
+	"../corewar.h"
+
+1493229940 source:c:\vcrivenc\parsing_ernest\file_read.c
+	"../corewar.h"
+
+1491842260 source:c:\vcrivenc\parsing_ernest\functions.c
+	"../corewar.h"
+
+1493230084 source:c:\vcrivenc\parsing_ernest\get_next_line.c
+	"../corewar.h"
+
+1491842260 source:c:\vcrivenc\parsing_ernest\inits.c
+	"../corewar.h"
+
+1492763106 source:c:\vcrivenc\parsing_ernest\messages.c
+	"../corewar.h"
+
+1491842260 source:c:\vcrivenc\parsing_ernest\name_comment.c
+	"../corewar.h"
+
+1493229534 source:c:\vcrivenc\parsing_ernest\parse.c
+	"../corewar.h"
+
+1491842260 source:c:\vcrivenc\parsing_ernest\set.c
+	"../corewar.h"
+
+1491842260 source:c:\vcrivenc\parsing_ernest\str_checks.c
+	"../corewar.h"
+
+1491842260 source:c:\vcrivenc\parsing_ernest\transform.c
+	"../corewar.h"
+
+1491842260 source:c:\vcrivenc\ft_itoa_base.c
+	<stdlib.h>
+
+1491842260 source:c:\vcrivenc\libft\ft_atoi.c
+	"libft.h"
+
+1491842260 source:c:\vcrivenc\libft\ft_bzero.c
+	"libft.h"
+
+1491842260 source:c:\vcrivenc\libft\ft_isalnum.c
+	"libft.h"
+
+1491842260 source:c:\vcrivenc\libft\ft_isalpha.c
+	"libft.h"
+
+1491842260 source:c:\vcrivenc\libft\ft_isascii.c
+	"libft.h"
+
+1491842260 source:c:\vcrivenc\libft\ft_isdigit.c
+	"libft.h"
+
+1491842260 source:c:\vcrivenc\libft\ft_isprint.c
+	"libft.h"
+
+1491842260 source:c:\vcrivenc\libft\ft_itoa.c
+	"libft.h"
+
+1491842260 source:c:\vcrivenc\libft\ft_lstadd.c
+	"libft.h"
+
+1491842260 source:c:\vcrivenc\libft\ft_lstdel.c
+	"libft.h"
+
+1491842260 source:c:\vcrivenc\libft\ft_lstdelone.c
+	"libft.h"
+
+1491842260 source:c:\vcrivenc\libft\ft_lstiter.c
+	"libft.h"
+
+1491842260 source:c:\vcrivenc\libft\ft_lstmap.c
+	"libft.h"
+
+1491842260 source:c:\vcrivenc\libft\ft_lstnew.c
+	"libft.h"
+
+1491842260 source:c:\vcrivenc\libft\ft_memalloc.c
+	"libft.h"
+
+1491842260 source:c:\vcrivenc\libft\ft_memccpy.c
+	"libft.h"
+
+1491842260 source:c:\vcrivenc\libft\ft_memchr.c
+	"libft.h"
+
+1491842260 source:c:\vcrivenc\libft\ft_memcmp.c
+	"libft.h"
+
+1491842260 source:c:\vcrivenc\libft\ft_memcpy.c
+	"libft.h"
+
+1491842260 source:c:\vcrivenc\libft\ft_memdel.c
+	"libft.h"
+
+1491842260 source:c:\vcrivenc\libft\ft_memset.c
+	"libft.h"
+
+1492761331 source:c:\vcrivenc\libft\ft_putchar.c
+	"libft.h"
+
+1491842260 source:c:\vcrivenc\libft\ft_putchar_fd.c
+	"libft.h"
+
+1491842260 source:c:\vcrivenc\libft\ft_putendl.c
+	"libft.h"
+
+1491842260 source:c:\vcrivenc\libft\ft_putendl_fd.c
+	"libft.h"
+
+1491842260 source:c:\vcrivenc\libft\ft_putnbr.c
+	"libft.h"
+
+1491842260 source:c:\vcrivenc\libft\ft_putnbr_fd.c
+	"libft.h"
+
+1491842260 source:c:\vcrivenc\libft\ft_putstr.c
+	"libft.h"
+
+1491842260 source:c:\vcrivenc\libft\ft_putstr_fd.c
+	"libft.h"
+
+1491842260 source:c:\vcrivenc\libft\ft_split_whitespaces.c
+	"libft.h"
+
+1491842260 source:c:\vcrivenc\libft\ft_strcat.c
+	"libft.h"
+
+1491842260 source:c:\vcrivenc\libft\ft_strchr.c
+	"libft.h"
+
+1491842260 source:c:\vcrivenc\libft\ft_strclr.c
+	"libft.h"
+
+1491842260 source:c:\vcrivenc\libft\ft_strcmp.c
+	"libft.h"
+
+1491842260 source:c:\vcrivenc\libft\ft_strcpy.c
+	"libft.h"
+
+1491842260 source:c:\vcrivenc\libft\ft_strdel.c
+	"libft.h"
+
+1491842260 source:c:\vcrivenc\libft\ft_strdup.c
+	"libft.h"
+
+1491842260 source:c:\vcrivenc\libft\ft_strequ.c
+	"libft.h"
+
+1491842260 source:c:\vcrivenc\libft\ft_striter.c
+	"libft.h"
+
+1491842260 source:c:\vcrivenc\libft\ft_striteri.c
+	"libft.h"
+
+1491842260 source:c:\vcrivenc\libft\ft_strjoin.c
+	"libft.h"
+
+1491842260 source:c:\vcrivenc\libft\ft_strlcat.c
+	"libft.h"
+
+1491842260 source:c:\vcrivenc\libft\ft_strlen.c
+	"libft.h"
+
+1491842260 source:c:\vcrivenc\libft\ft_strmap.c
+	"libft.h"
+
+1491842260 source:c:\vcrivenc\libft\ft_strmapi.c
+	"libft.h"
+
+1491842260 source:c:\vcrivenc\libft\ft_strncat.c
+	"libft.h"
+
+1491842260 source:c:\vcrivenc\libft\ft_strncmp.c
+	"libft.h"
+
+1491842260 source:c:\vcrivenc\libft\ft_strncpy.c
+	"libft.h"
+
+1491842260 source:c:\vcrivenc\libft\ft_strnequ.c
+	"libft.h"
+
+1491842260 source:c:\vcrivenc\libft\ft_strnew.c
+	"libft.h"
+
+1491842260 source:c:\vcrivenc\libft\ft_strnstr.c
+	"libft.h"
+
+1491842260 source:c:\vcrivenc\libft\ft_strrchr.c
+	"libft.h"
+
+1491842260 source:c:\vcrivenc\libft\ft_strsplit.c
+	"libft.h"
+
+1491842260 source:c:\vcrivenc\libft\ft_strstr.c
+	"libft.h"
+
+1491842260 source:c:\vcrivenc\libft\ft_strsub.c
+	"libft.h"
+
+1491842260 source:c:\vcrivenc\libft\ft_strtrim.c
+	"libft.h"
+
+1491842260 source:c:\vcrivenc\libft\ft_tolower.c
+	"libft.h"
+
+1491842260 source:c:\vcrivenc\libft\ft_toupper.c
+	"libft.h"
+
